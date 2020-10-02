@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c&#43;&#43; on Amin&#39;s Den</title>
+    <link>https://aminaliari.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on Amin&#39;s Den</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 14:21:12 +0330</lastBuildDate><atom:link href="https://aminaliari.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mithra Graphics Renderer</title>
+      <link>https://aminaliari.github.io/posts/mithra/</link>
+      <pubDate>Fri, 02 Oct 2020 14:21:12 +0330</pubDate>
+      
+      <guid>https://aminaliari.github.io/posts/mithra/</guid>
+      <description>&amp;ldquo;Mithra&amp;rdquo; is a physically-based graphics renderer featuring many new and modern rendering techniques such as image-based lighting, shadow-mapping, etc. I have also proposed and defended this renderer as my B.Sc. project at Amirkabir University of Technology (Tehran Polytechnic).
+ This is a showcase of some of its main features. Hopefully, in near future, I will share more about the development process in this blog.‍
+   #slide-window { position: relative; width: 700px; height: 350px; overflow: hidden; top: 0px; left: 0px; } #slides-list { width: 700px; height: 350px; position: absolute; margin: 0px; padding: 0px; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); transition: all 0.</description>
+    </item>
+    
+  </channel>
+</rss>
