@@ -166,15 +166,16 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
 <li>The entire algorithm is O(kn/m)-time</li>
 <li>Exhibits both high memory locality and parallel memory access.</li>
 <li>Keeps the edges sharp while blurring the moving objects</li>
+<li>Early out when there is no movement going on in the radius of that pixel</li>
 </ul>
 <p>If you want to learn more about this method, you can read the paper down below in the references. Also, I need to mention that although there are many improvements that this method introduces, there exist more sophisticated and state-of-the-art solutions being used in the AAA games. There are many great GDC and SIGGRAPH talks on this topic, so I am sure that you can find them on your own.</p>
 <h4 id="heading-5"></h4>
 <h1 id="an-optimized-implementation">An optimized implementation</h1>
 <p>Alright, enough with the introductions; now, it is time to talk about what I was able to do!</p>
-<p>First of all, if this approach is considered to be a good one then what is the problem? Well, even though today&rsquo;s GPUs are way more competent than the ones back in 2012, when this paper was first published. However, it is always a good idea to find the optimum solution. Especially when there is room for optimization.
+<p>First of all, if this approach is considered to be a good one then what is the problem? Well, even though today&rsquo;s GPUs are way more competent than the ones back in when this paper was first published (2012), it is always a good idea to find the optimum solution. Especially when there is room for optimization.
 So here is what I did to implement an optimized version of this method:</p>
 <ol>
-<li>Generally, memory bandwidth is scarce. It gets worse when we are talking about Graphics cards. Therefore, we do not want to store all our buffers such as the velocity buffer and the ones generated from it; on the other hand, GPUs are more than okay to do a bunch of extra matrix multiplications on the fly. So we can, for instance, upload all of our entities world matrices (both the current frame and the one before that) to the GPU which would basically be the same as our scene tree. This way we can calculate the objects' motion vector without reading/writing from/to excessive textures.</li>
+<li>Generally, memory bandwidth is scarce. Moreover, It gets even worse when we are talking about Graphics cards. Therefore, we do not want to store all of our buffers such as the velocity buffer and the ones generated from it into render targets. On the other hand, GPUs are more than okay to do a bunch of extra matrix multiplications on the fly. So we can, for instance, upload all of our entities world matrices (both the current frame and the one before that) to the GPU which would basically be the same as our scene tree. This way we can calculate the objects' motion vector without excessive read or write of textures.</li>
 </ol>
 <h1 id="heading-6"></h1>
 <ol start="2">
@@ -182,7 +183,7 @@ So here is what I did to implement an optimized version of this method:</p>
 </ol>
 <h1 id="heading-7"></h1>
 <ol start="3">
-<li>To further optimize this method, we have to pay heed to our memory access pattern. In the <em>Neighbor pass</em> where we find the most dominant velocity vector between the neighbors, we are essentially accessing 8 neighbors, but these tiles share a lot of neighbors. As a result, should we cache the of our texture fetch in a shared memory for each local thread group, we can avoid the extra costly texture fetches in the future.</li>
+<li>To further optimize this method, we have to pay heed to our memory access pattern. In the <em>Neighbor pass</em> where we find the most dominant velocity vector between the neighbors, we are essentially accessing 8 neighbors, but these tiles share a lot of neighbors. As a result, should we cache the result of our texture fetch in shared memories for each local thread group, we can avoid the extra costly texture fetches in the future.</li>
 </ol>
 <h1 id="conclusion">Conclusion</h1>
 <p>Alright, finally, it is time to show some numbers. I implemented this project using The Forge Rendering Framework, and then ran it on an Nvidia&rsquo;s GTX 970. The results were as follows:</p>
