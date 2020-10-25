@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>motion blur on Amin&#39;s Den</title>
+    <link>https://aminaliari.github.io/tags/motion-blur/</link>
+    <description>Recent content in motion blur on Amin&#39;s Den</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2020 10:00:00 +0330</lastBuildDate><atom:link href="https://aminaliari.github.io/tags/motion-blur/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Motion Blur</title>
+      <link>https://aminaliari.github.io/posts/motionblur/</link>
+      <pubDate>Sun, 25 Oct 2020 10:00:00 +0330</pubDate>
+      
+      <guid>https://aminaliari.github.io/posts/motionblur/</guid>
+      <description>Recently, I wanted to explore different Motion Blur techniques being used in the Video Game Industry. Now, I have decided to write down the result of this short research of mine.
+At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
+Screen-space Motion Blur My main issue with the trivial approaches was that it would only take the camera motion into account.</description>
+    </item>
+    
+  </channel>
+</rss>

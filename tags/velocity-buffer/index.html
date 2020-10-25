@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>velocity buffer - Amin&#39;s Den</title>
+
+<meta name="description"
+    content="velocity buffer - Amin&#39;s Den">
+<meta name="author" content="">
+<link rel="canonical" href="https://aminaliari.github.io/tags/velocity-buffer/" />
+
+<link href="https://aminaliari.github.io/css/stylesheet.min.c5f8f2549279b67d7472698057ccf873f52e6a24092d620f61495bd68940c025.css" integrity="sha256-xfjyVJJ5tn10cmmAV8z4c/UuaiQJLWIPYUlb1olAwCU=" rel="preload stylesheet"
+    as="style">
+
+<link rel="apple-touch-icon" href="https://aminaliari.github.io/apple-touch-icon.png">
+<link rel="icon" href="https://aminaliari.github.io/favicon.ico">
+<meta name="generator" content="Hugo 0.75.1" />
+<link rel="alternate" type="application/rss+xml" href="https://aminaliari.github.io/tags/velocity-buffer/index.xml" title="Amin's Den" />
+</head>
+
+<body class="list dark" id="top">
+<header class="header">
+    <nav class="nav">
+        <p class="logo"><a href="https://aminaliari.github.io/">Amin&#39;s Den</a></p>
+        <ul class="menu" id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://aminaliari.github.io/about/">
+                    <span>
+                        About
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aminaliari.github.io/archives/">
+                    <span>
+                        Archives
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aminaliari.github.io/series/">
+                    <span>
+                        Series
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aminaliari.github.io/tags/">
+                    <span>
+                        Tags
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main class="main"> 
+<header class="page-header">
+  <h1>velocity buffer</h1>
+</header>
+
+
+<article class="post-entry">
+  <figure class="entry-cover">
+    <img src="https://aminaliari.github.io/posts/motionblur/images/final.png" alt="cover image for Implementing Motion Blur">
+  </figure>
+  <header class="entry-header">
+    <h2>
+      Implementing Motion Blur
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Recently, I wanted to explore different Motion Blur techniques being used in the Video Game Industry. Now, I have decided to write down the result of this short research of mine.
+At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
+Screen-space Motion Blur My main issue with the trivial approaches was that it would only take the camera motion into account....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>October 25, 2020</time>&nbsp;·&nbsp;5 min
+  </footer>
+  <a class="entry-link" aria-label="post link to Implementing Motion Blur" href="https://aminaliari.github.io/posts/motionblur/"></a>
+</article>
+
+    </main><footer class="footer">
+    <span>&copy; 2020 <a href="https://aminaliari.github.io/">Amin&#39;s Den</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo️️</a>️</span>
+    <span>&middot;</span>
+    <span>Theme️ <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top">
+    <button class="top-link" id="top-link" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z" /></svg>
+    </button>
+</a>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+</script>
+</body>
+
+</html>

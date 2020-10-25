@@ -6,11 +6,22 @@
     <description>Recent content in rendering on Amin&#39;s Den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2020 14:21:12 +0330</lastBuildDate><atom:link href="https://aminaliari.github.io/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 10:00:00 +0330</lastBuildDate><atom:link href="https://aminaliari.github.io/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Motion Blur</title>
+      <link>https://aminaliari.github.io/posts/motionblur/</link>
+      <pubDate>Sun, 25 Oct 2020 10:00:00 +0330</pubDate>
+      
+      <guid>https://aminaliari.github.io/posts/motionblur/</guid>
+      <description>Recently, I wanted to explore different Motion Blur techniques being used in the Video Game Industry. Now, I have decided to write down the result of this short research of mine.
+At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
+Screen-space Motion Blur My main issue with the trivial approaches was that it would only take the camera motion into account.</description>
+    </item>
+    
     <item>
       <title>Mithra Graphics Renderer</title>
       <link>https://aminaliari.github.io/posts/mithra/</link>
-      <pubDate>Fri, 02 Oct 2020 14:21:12 +0330</pubDate>
+      <pubDate>Wed, 01 Jul 2020 10:00:00 +0330</pubDate>
       
       <guid>https://aminaliari.github.io/posts/mithra/</guid>
       <description>&amp;ldquo;Mithra&amp;rdquo; is a physically-based graphics renderer featuring many new and modern rendering techniques such as image-based lighting, shadow-mapping, etc. I have also proposed and defended this renderer as my B.Sc. project at Amirkabir University of Technology (Tehran Polytechnic).
