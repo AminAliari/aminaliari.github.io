@@ -140,17 +140,17 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
       let Y = bX + ~vN · t + 0.5pxc // round to nearest
 
       // Fore- vs. background classification of Y relative to X
-      let f = softDepthCompare(Z[X], Z[Y ])
-      let b = softDepthCompare(Z[Y ], Z[X])
+      let f = softDepthCompare(Z[X], Z[Y])
+      let b = softDepthCompare(Z[Y], Z[X])
 
       // Case 1: Blurry Y in front of any X
-      αY = f · cone(Y, X, V[Y ]) +
+      αY = f · cone(Y, X, V[Y]) +
 
       // Case 2: Any Y behind blurry X;estimate background
       b · cone(X, Y, V[X]) +
 
       // Case 3: Simultaneously blurry X and Y
-      cylinder(Y, X, V[Y ]) · cylinder(X, Y, V[X]) · 2
+      cylinder(Y, X, V[Y]) · cylinder(X, Y, V[X]) · 2
 
       // Accumulate
       weight += αY ; sum += αY · C[Y]
