@@ -7,7 +7,7 @@
 
 <title>Optimizing A Motion Blur Effect - Amin&#39;s Den</title>
 
-<meta name="description" content="Recently, I wanted to explore different Motion Blur techniques being used in the Video Game Industry. Now, I have decided to write down the result of this short research of mine.
+<meta name="description" content="Recently, I wanted to explore different Motion Blur techniques being used in the video game industry. Now, I have decided to write down the result of this short research of mine.
 At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
 Screen-space Motion Blur My main issue with the trivial approaches was that it would only take the camera motion into account.">
 <meta name="author" content="">
@@ -72,7 +72,7 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
   <figure class="entry-cover">
     <img src="https://aminaliari.github.io/posts/motionblur/images/final.png" alt="cover image for Optimizing A Motion Blur Effect">
   </figure>
-  <div class="post-content"><p>Recently, I wanted to explore different Motion Blur techniques being used in the Video Game Industry. Now, I have decided to write down the result of this short research of mine.</p>
+  <div class="post-content"><p>Recently, I wanted to explore different Motion Blur techniques being used in the video game industry. Now, I have decided to write down the result of this short research of mine.</p>
 <p>At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!</p>
 <h1 id="screen-space-motion-blur">Screen-space Motion Blur</h1>
 <p>My main issue with the trivial approaches was that it would only take the camera motion into account. The problem with this approach is that the movement of the object would not make a discernible motion trail. Basically, in motion blur effects based on the camera&rsquo;s position and orientation, one rendering pass would be dedicated to finding the difference of pixels' position between the current frame and the previous one. The result of this render pass is stored in a render target, commonly, called Screen velocity vectors.</p>
@@ -93,7 +93,7 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
 
 <h1 id="heading"></h1>
 <ol start="3">
-<li>Create the velocity buffer based on current and the previous objects word matrices, and store it as half-vectors.</li>
+<li>Create the velocity buffer based on current and the previous objects world matrices, and store it as half-vectors.</li>
 </ol>
 <figure>
     <img src="images/velocity-buffer.png"/> 
@@ -172,10 +172,10 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
 <h4 id="heading-5"></h4>
 <h1 id="an-optimized-implementation">An optimized implementation</h1>
 <p>Alright, enough with the introductions; now, it is time to talk about what I was able to do!</p>
-<p>First of all, if this approach is considered to be a good one then what is the problem? Well, even though today&rsquo;s GPUs are way more competent than the ones back in when this paper was first published (2012), it is always a good idea to find the optimum solution. Especially when there is room for optimization.
+<p>First of all, if this approach is considered to be a good one then what is the problem? Well, even though today&rsquo;s GPUs are way more competent than the ones back when this paper was first published (2012), it is always a good idea to find the optimum solution; especially when there is room for optimization.
 So here is what I did to implement an optimized version of this method:</p>
 <ol>
-<li>Generally, memory bandwidth is scarce. Moreover, It gets even worse when we are talking about Graphics cards. Therefore, we do not want to store all of our buffers such as the velocity buffer and the ones generated from it into render targets. On the other hand, GPUs are more than okay to do a bunch of extra matrix multiplications on the fly. So we can, for instance, upload all of our entities world matrices (both the current frame and the one before that) to the GPU which would basically be the same as our scene tree. This way we can calculate the objects' motion vector without excessive read or write of textures.</li>
+<li>Generally, memory bandwidth is scarce. Moreover, It gets even worse when we are talking about Graphics cards. Therefore, we do not want to store all of our buffers such as the velocity buffer and the ones generated from it into render targets. On the other hand, GPUs are more than okay to do a bunch of extra matrix multiplications on the fly. For this reason, it is feasible to upload all of our entities world matrices (both the current frame and the one before that) to the GPU which would basically be the same as our scene tree. This way we can calculate the objects' motion vector without excessive read or write of textures, and discard result afterward.</li>
 </ol>
 <h1 id="heading-6"></h1>
 <ol start="2">
@@ -192,7 +192,7 @@ So here is what I did to implement an optimized version of this method:</p>
 </figure>
 
 <h1 id="disclaimer">Disclaimer</h1>
-<p>I wrote this article solely for educational purposes; therefore I would not be surprised if I made a bunch of severe errors. In that case, I will be more than honored to be enlightened. For that, please use one of the contact methods provided on the Homepage. Thank you!</p>
+<p>I wrote this article solely for educational purposes; therefore, I would not be surprised if I made a bunch of severe errors. In that case, I will be more than honored to be enlightened. For that, please use one of the contact methods provided on the Homepage. Thank you!</p>
 <h4 id="heading-8"></h4>
 <h1 id="references">References</h1>
 <ol>

@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>computer graphics on Amin&#39;s Den</title>
-    <link>https://aminaliari.github.io/tags/computer-graphics/</link>
-    <description>Recent content in computer graphics on Amin&#39;s Den</description>
+    <title>image-based lighting on Amin&#39;s Den</title>
+    <link>https://aminaliari.github.io/tags/image-based-lighting/</link>
+    <description>Recent content in image-based lighting on Amin&#39;s Den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 10:00:00 +0330</lastBuildDate><atom:link href="https://aminaliari.github.io/tags/computer-graphics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Optimizing A Motion Blur Effect</title>
-      <link>https://aminaliari.github.io/posts/motionblur/</link>
-      <pubDate>Sun, 25 Oct 2020 10:00:00 +0330</pubDate>
-      
-      <guid>https://aminaliari.github.io/posts/motionblur/</guid>
-      <description>Recently, I wanted to explore different Motion Blur techniques being used in the video game industry. Now, I have decided to write down the result of this short research of mine.
-At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
-Screen-space Motion Blur My main issue with the trivial approaches was that it would only take the camera motion into account.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 01 Jul 2020 10:00:00 +0330</lastBuildDate><atom:link href="https://aminaliari.github.io/tags/image-based-lighting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mithra Graphics Renderer</title>
       <link>https://aminaliari.github.io/posts/mithra/</link>
