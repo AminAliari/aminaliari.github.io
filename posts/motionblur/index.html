@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Optimizing A Motion Blur Effect - Amin&#39;s Den</title>
+<title>Optimizing a Motion Blur Effect - Amin&#39;s Den</title>
 
-<meta name="description" content="Recently, I wanted to explore different Motion Blur techniques being used in the video game industry. Now, I have decided to write down the result of this short research of mine.
+<meta name="description" content="Photo: The Last of Us Part II  Recently, I explored different Motion Blur techniques being used in the video game industry. Now, I have decided to jot down the result of this research.
 At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
-Screen-space Motion Blur My main issue with the trivial approaches was that it would only take the camera motion into account.">
+Screen-space Motion Blur My main issue with the trivial approaches was that they would only take the camera motion into account.">
 <meta name="author" content="">
 <link rel="canonical" href="https://aminaliari.github.io/posts/motionblur/" />
 
@@ -63,19 +63,21 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
 <article class="post-single">
   <header class="post-header">
     <h1 class="post-title">
-      Optimizing A Motion Blur Effect
+      Optimizing a Motion Blur Effect
     </h1>
     <div class="post-meta">
       <time>October 25, 2020</time>&nbsp;·&nbsp;5 min
     </div>
   </header>
   <figure class="entry-cover">
-    <img src="https://aminaliari.github.io/posts/motionblur/images/final.png" alt="cover image for Optimizing A Motion Blur Effect">
+    <img src="https://aminaliari.github.io/posts/motionblur/images/final.png" alt="cover image for Optimizing a Motion Blur Effect">
   </figure>
-  <div class="post-content"><p>Recently, I wanted to explore different Motion Blur techniques being used in the video game industry. Now, I have decided to write down the result of this short research of mine.</p>
+  <div class="post-content"><h6 id="photo-the-last-of-us-part-ii">Photo: The Last of Us Part II</h6>
+<hr>
+<p>Recently, I explored different Motion Blur techniques being used in the video game industry. Now, I have decided to jot down the result of this research.</p>
 <p>At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!</p>
 <h1 id="screen-space-motion-blur">Screen-space Motion Blur</h1>
-<p>My main issue with the trivial approaches was that it would only take the camera motion into account. The problem with this approach is that the movement of the object would not make a discernible motion trail. Basically, in motion blur effects based on the camera&rsquo;s position and orientation, one rendering pass would be dedicated to finding the difference of pixels' position between the current frame and the previous one. The result of this render pass is stored in a render target, commonly, called Screen velocity vectors.</p>
+<p>My main issue with the trivial approaches was that they would only take the camera motion into account. The problem with this approach is that the movement of the object would not make a discernible motion trail. Basically, in motion blur effects based on the camera&rsquo;s position and orientation, one rendering pass would be dedicated to finding the difference of pixels' position between the current frame and the previous one. The result of this render pass is stored in a render target, commonly, called Screen velocity vectors.</p>
 <h1 id="a-better-approach">A better approach</h1>
 <p>As I was continuing my research, one method particularly caught my eye. It was called <em>A Reconstruction Filter for Plausible Motion Blur</em> by Prof. Morgan McGuire.</p>
 <p>Let&rsquo;s first see how this method works:</p>
@@ -168,7 +170,7 @@ Screen-space Motion Blur My main issue with the trivial approaches was that it w
 <li>Keeps the edges sharp while blurring the moving objects</li>
 <li>Early out when there is no movement going on in the radius of that pixel</li>
 </ul>
-<p>If you want to learn more about this method, you can read the paper down below in the references. Also, I need to mention that although there are many improvements that this method introduces, there exist more sophisticated and state-of-the-art solutions being used in the AAA games. There are many great GDC and SIGGRAPH talks on this topic, so I am sure that you can find them on your own.</p>
+<p>If you want to learn more about this method, you can read the paper down below in the references. Also, I need to mention that although there are many improvements that this method introduces, there exist more sophisticated and state-of-the-art solutions being used in the AAA games. There are many great GDC and SIGGRAPH talks on this topic, so I am sure you can find them yourself</p>
 <h4 id="heading-5"></h4>
 <h1 id="an-optimized-implementation">An optimized implementation</h1>
 <p>Alright, enough with the introductions; now, it is time to talk about what I was able to do!</p>
@@ -186,7 +188,7 @@ So here is what I did to implement an optimized version of this method:</p>
 <li>To further optimize this method, we have to pay heed to our memory access pattern. In the <em>Neighbor pass</em> where we find the most dominant velocity vector between the neighbors, we are essentially accessing 8 neighbors, but these tiles share a lot of neighbors. As a result, should we cache the result of our texture fetch in shared memories for each local thread group, we can avoid the extra costly texture fetches in the future.</li>
 </ol>
 <h1 id="conclusion">Conclusion</h1>
-<p>Alright, finally, it is time to show some numbers. I implemented this project using The Forge Rendering Framework, and then ran it on an Nvidia&rsquo;s GTX 970. The results were as follows:</p>
+<p>Alright, finally, it is time to show some numbers. I implemented this project using The Forge rendering framework, and then ran it on an Nvidia&rsquo;s GTX 970. The results were as follow:</p>
 <figure>
     <img src="images/result.png"/> 
 </figure>
