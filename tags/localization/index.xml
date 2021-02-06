@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Jun 2020 10:00:00 +0330</pubDate>
       
       <guid>https://aminaliari.github.io/posts/arc/</guid>
-      <description>While I was a researcher at Amirkabir University of Technology Robotic Center, I&amp;rsquo;ve developed a simulation environment using Unity3D game engine to connect to ROS framework. This tool was mostly used to test our AI, movement, localization, and vision systems.
+      <description>While I was a researcher at Amirkabir University of Technology Robotic Center, I&amp;rsquo;ve developed a simulation environment using Unity3D game engine to connect to ROS framework. This tool was mostly used to test our AI, movement, localization, and vision systems.
  We needed this environment because other teams such as mechanic or electronic team would want to take robots to work on them and at the same time software team needed to continue their development plans.</description>
     </item>
     
