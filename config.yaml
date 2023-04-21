@@ -1,0 +1,118 @@
+baseURL: https://aminaliari.github.io/
+languageCode: en-us
+title: A Triangle Journey
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+    
+taxonomies:
+  tag: "tags"
+  category: "series"
+
+menu:
+  main:
+  - name: "About"
+    url: /about
+    weight: 1
+  - name: "Posts"
+    url: posts/
+    weight: 2
+  - name: Search
+    url: search/
+    weight: 3
+  - name: "Series"
+    url: series/
+    weight: 34
+  - name: "Tags"
+    url: tags/
+    weight: 5
+  - name: GitHub
+    url: https://github.com/AminAliari
+    weight: 6
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+  env: production
+  # author: Amin Aliari
+  # description: "Personal Blog"
+
+  ShowToc: false
+  comments: false
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowCodeCopyButtons: true
+  disableThemeToggle: false
+  displayFullLangName: false
+  disqusShortname: aminaliari
+  ShowRssButtonInSectionTermList: true
+
+  cover:
+      linkFullImages: true
+      responsiveImages: true
+
+  privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+  services:
+      instagram:
+          disableInlineCSS: true
+      twitter:
+          disableInlineCSS: true
+
+  assets:
+        disableHLJS: false
+        favicon: "/icon/favicon.ico"
+        favicon16x16: "/icon/favicon-16x16.png"
+        favicon32x32: "/icon/favicon-32x32.png"
+        apple_touch_icon: "/icon/apple-touch-icon.png"
+        safari_pinned_tab: "/icon/favicon-32x32.png"
+
+  homeInfoParams:
+    Title: Amin Aliari, Graphics Programmer
+    Content: >
+      I am currently a researcher at [Ubisoft Montreal,](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
+      and here, I mostly write about my hobby projects and topics related to computer graphics.
+      [More about me.](/about)
+
+  socialIcons:
+    - name: "email"
+      url:  "mailto:maminaliari@gmail.com"
+    # - name: "stackoverflow"
+    #   url:  "https://stackoverflow.com/users/5866382/amin-aliari"
+    - name: "github"
+      url:  "https://github.com/AminAliari"
+    - name: "linkedin"
+      url:  "https://www.linkedin.com/in/maliari/"
+    - name: "twitter"
+      url:  "https://twitter.com/maminaliari"

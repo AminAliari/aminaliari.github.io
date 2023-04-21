@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer graphics on Amin&#39;s Den</title>
+    <link>http://localhost:1313/tags/computer-graphics/</link>
+    <description>Recent content in computer graphics on Amin&#39;s Den</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2020 10:00:00 +0330</lastBuildDate><atom:link href="http://localhost:1313/tags/computer-graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing a Motion Blur Effect</title>
+      <link>http://localhost:1313/posts/motionblur/</link>
+      <pubDate>Sun, 25 Oct 2020 10:00:00 +0330</pubDate>
+      
+      <guid>http://localhost:1313/posts/motionblur/</guid>
+      <description>Photo: The Last of Us Part II  Recently, I explored different Motion Blur techniques being used in the video game industry. Now, I have decided to jot down the result of this research.
+At the first glance, I found several per-pixel motion blur approaches, but they did not impress me. To explain why I was not satisfied with the results, some history lessons are required!
+Screen-space Motion Blur My main issue with the trivial approaches was that they would only take the camera motion into account.</description>
+    </item>
+    
+    <item>
+      <title>Mithra Graphics Renderer</title>
+      <link>http://localhost:1313/posts/mithra/</link>
+      <pubDate>Wed, 01 Jul 2020 10:00:00 +0330</pubDate>
+      
+      <guid>http://localhost:1313/posts/mithra/</guid>
+      <description>&amp;ldquo;Mithra&amp;rdquo; is a physically-based graphics renderer featuring many new and modern rendering techniques such as image-based lighting, shadow-mapping, etc. I have also proposed and defended this renderer as my B.Sc. project at Amirkabir University of Technology (Tehran Polytechnic).
+ This is a showcase of some of its main features. Hopefully, in near future, I will share more about the development process in this blog.‍
+   #slide-window { position: relative; width: 700px; height: 350px; overflow: hidden; top: 0px; left: 0px; } #slides-list { width: 700px; height: 350px; position: absolute; margin: 0px; padding: 0px; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); transition: all 0.</description>
+    </item>
+    
+  </channel>
+</rss>
