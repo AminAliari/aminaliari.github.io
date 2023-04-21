@@ -11,9 +11,12 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 
+googleAnalytics: G-YQ479NBFTH
+
 minify:
     disableXML: true
-    
+    minifyOutput: true
+
 taxonomies:
   tag: "tags"
   category: "series"

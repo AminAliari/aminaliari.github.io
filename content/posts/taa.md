@@ -14,7 +14,7 @@ tags: [Computer Graphics, Rendering, TAA, God Rays, Blue Noise]
 I wanted to implement a proper anti-aliasing method for Mithra.
 There are different sources of aliasing. For instance, we have the classic jagged edges of triangles and other things such as [specular ailising](https://www.shadertoy.com/view/WssyR7), which must be addressed, especially in a PBR setup.
 
-Anyways, I decided to implement UE4's TAA method, which was [introduced](https://advances.realtimerendering.com/s2014/index.html#_HIGH-QUALITY_TEMPORAL_SUPERSAMPLING) by Brain Karis a couple of years ago.
+Anyways, I decided to implement UE4's TAA method, which was [introduced](https://advances.realtimerendering.com/s2014/index.html#_HIGH-QUALITY_TEMPORAL_SUPERSAMPLING) by Brian Karis a couple of years ago.
 
 # God Rays
 When we implement TAA, we can see that the output converges in a couple of frames, and the edges would mostly look smooth and close to a super-sampled image.
