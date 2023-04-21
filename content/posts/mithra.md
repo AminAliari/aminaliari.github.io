@@ -5,8 +5,8 @@ cover:
     image: "/images/mithra/shadow-editor.png"
     relative: false
 draft: false
-tags: [Computer Graphics, Rendering, Physically-based Rendering, OpenGL, C++, Image-based Lighting]
 series: [Mithra]
+tags: [Computer Graphics, Rendering, Physically-based Rendering, OpenGL, C++, Image-based Lighting]
 ---
 
 "Mithra" is a physically-based graphics renderer featuring many new and modern rendering techniques such as image-based lighting, shadow-mapping with tight projection, and more.
@@ -14,7 +14,7 @@ I have also proposed and defended this renderer as my B.Sc. project at Amirkabir
 
 ####
 
-This is a showcase of some of its main features. Hopefully, in near future, I will share more about the development process in this blog.‍
+This is a showcase of some of its main features. Hopefully, in the near future, I will share more about the development process in this blog.‍
 
 ####
 
@@ -31,7 +31,7 @@ This is a showcase of some of its main features. Hopefully, in near future, I wi
  - Specular IBL (image-based lighting)
  - Editor
  - Mesh importer, supporting: glTF, fbx, obj
- - Basic world editor, and component property viewer
+ - Basic world editor and component property viewer
  - Volumetric Fog
  - Temporal Anti-Aliasing (TAA)
  
@@ -40,8 +40,8 @@ This is a showcase of some of its main features. Hopefully, in near future, I wi
  - Debug modes to see normals, ambient, metalness, roughness, etc.
  - Shaders hot reloading
  - Scene graph
- - Property viewer to move around object, manipulate lighting or environment settings
- - Live texture viewer in memory (gpu vram) to debug each rendering pass
+ - Property viewer to move around the object, manipulate lighting or environment settings
+ - Live texture viewer in memory (VRAM) to debug each rendering pass
  - Buffers list viewer
 
 # Roadmap
@@ -50,8 +50,8 @@ This is a showcase of some of its main features. Hopefully, in near future, I wi
  - Texture atlas
  - SSAO
  - HDR Bloom
- - More advanced shadow techniques such as moment shadow maps
- - Local illumination with spherical harmonics and spherical gussians
+ - More advanced shadow techniques, such as moment shadow maps
+ - Global illumination with spherical harmonics
  - Displacement maps
  - Clear coats
  - Blending different BRDFs
@@ -70,4 +70,4 @@ This is a showcase of some of its main features. Hopefully, in near future, I wi
 
 ####
 
-> Note: all assets used are from [Skecthfab](https://sketchfab.com) free plan.
+> Note: All assets used are from [Skecthfab](https://sketchfab.com) free plan.
