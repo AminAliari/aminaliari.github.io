@@ -2,9 +2,9 @@
 title: "Optimizing a Motion Blur Effect"
 date: 2020-10-25T10:00:00
 cover:
-   image: "posts/motionblur/images/final.png"
-   relative: true
-   caption: "Photo: The Last of Us Part II"
+   image: "/images/motionblur/final.png"
+   relative: false
+   caption: "Photo: The Last of Us Part II by Naughty Dog ©2019 Sony Interactive Entertainment"
 draft: false
 tags: [Computer Graphics, Rendering, Motion Blur, Optimization, Velocity Buffer]
 ---
@@ -26,13 +26,13 @@ Let's first see how this method works:
 
 2. Store the depth buffer. This is needed at the filter stage to preserve the sharpness of the edges.
 
-{{< figure src="images/gbuffer.png" title="" >}}
+{{< figure src="/images/motionblur/gbuffer.png" title="" >}}
 
 #
 
 3. Create the velocity buffer based on current and the previous objects world matrices, and store it as half-vectors.
 
-{{< figure src="images/velocity-buffer.png" title="" >}}
+{{< figure src="/images/motionblur/velocity-buffer.png" title="" >}}
 
 #
 
@@ -42,13 +42,13 @@ Let's first see how this method works:
 
 5. Find the greatest velocity vector in each tile based on its length.
 
-{{< figure src="images/velocity-max.png" title="" >}}
+{{< figure src="/images/motionblur/velocity-max.png" title="" >}}
 
 #
 
 6. Find the greatest velocity vector between all neighbors of each tile.
 
-{{< figure src="images/tile-max.png" title="" >}}
+{{< figure src="/images/motionblur/tile-max.png" title="" >}}
 
 #
 
@@ -126,7 +126,7 @@ So here is what I did to implement an optimized version of this method:
 # Conclusion
 Alright, finally, it is time to show some numbers. I implemented this project using The Forge rendering framework, and then ran it on an NVIDIA GTX 970. The results were as follow:
 
-{{< figure src="images/result.png" title="" >}}
+{{< figure src="/images/motionblur/result.png" title="" >}}
 
 # Disclaimer
 I wrote this article solely for educational purposes; therefore, I would not be surprised if I made a bunch of severe errors. In that case, I will be more than honored to be enlightened. For that, please use one of the contact methods provided on the Homepage. Thank you!

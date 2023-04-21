@@ -6,6 +6,7 @@ summary: "about"
 showReadingTime: false
 ---
 
+<span class="about-amin">
 I have been active in the game industry for seven years and have four years of experience in the computer graphics field.
 I am currently a researcher at [Ubisoft Montreal,](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
 and studying master's at [ÉTS.](https://etsmtl.ca/en)
@@ -21,3 +22,5 @@ which was also presented at the [EUROGRAPHICS 2023](https://eg2023.saarland-info
 #
 
 **My resume is available upon request:** [maminaliari at gmail dot com](mailto:maminaliari@gmail.com)
+
+</span>

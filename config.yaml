@@ -1,6 +1,6 @@
 baseURL: https://aminaliari.github.io/
 languageCode: en-us
-title: A Triangle Journey
+title: A Triangle's Journey
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -31,7 +31,7 @@ menu:
     weight: 3
   - name: "Series"
     url: series/
-    weight: 34
+    weight: 4
   - name: "Tags"
     url: tags/
     weight: 5
