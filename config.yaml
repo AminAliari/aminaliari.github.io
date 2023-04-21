@@ -45,7 +45,31 @@ outputs:
         - RSS
         - JSON
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
+  homeInfoParams:
+    Title: Amin Aliari, Graphics Programmer
+    Content: >
+      I am currently a researcher at [Ubisoft Montreal,](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
+      and here, I mostly write about my hobby projects and topics related to computer graphics.
+      [More about me.](/about)
+
+  socialIcons:
+    - name: "email"
+      url:  "mailto:maminaliari@gmail.com"
+    # - name: "stackoverflow"
+    #   url:  "https://stackoverflow.com/users/5866382/amin-aliari"
+    - name: "github"
+      url:  "https://github.com/AminAliari"
+    - name: "linkedin"
+      url:  "https://www.linkedin.com/in/maliari/"
+    - name: "twitter"
+      url:  "https://twitter.com/maminaliari"
+
   env: production
   # author: Amin Aliari
   # description: "Personal Blog"
@@ -89,7 +113,6 @@ params:
           disableInlineCSS: true
       twitter:
           disableInlineCSS: true
-
   assets:
         disableHLJS: false
         favicon: "/icon/favicon.ico"
@@ -97,22 +120,3 @@ params:
         favicon32x32: "/icon/favicon-32x32.png"
         apple_touch_icon: "/icon/apple-touch-icon.png"
         safari_pinned_tab: "/icon/favicon-32x32.png"
-
-  homeInfoParams:
-    Title: Amin Aliari, Graphics Programmer
-    Content: >
-      I am currently a researcher at [Ubisoft Montreal,](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
-      and here, I mostly write about my hobby projects and topics related to computer graphics.
-      [More about me.](/about)
-
-  socialIcons:
-    - name: "email"
-      url:  "mailto:maminaliari@gmail.com"
-    # - name: "stackoverflow"
-    #   url:  "https://stackoverflow.com/users/5866382/amin-aliari"
-    - name: "github"
-      url:  "https://github.com/AminAliari"
-    - name: "linkedin"
-      url:  "https://www.linkedin.com/in/maliari/"
-    - name: "twitter"
-      url:  "https://twitter.com/maminaliari"
