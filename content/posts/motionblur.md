@@ -9,6 +9,8 @@ draft: false
 tags: [Computer Graphics, Rendering, Motion Blur, Optimization, Velocity Buffer]
 ---
 
+# Download
+First things first! You can get the code from the link below. Follow the instructions to download the Sponza art assets. 
 [Source Code](https://github.com/AminAliari/motion-blur)
 
 ---
@@ -138,6 +140,10 @@ Alright, finally, it is time to show some numbers. I implemented this project us
 ####
 
 # References
-1. The Forge - [Github](https://github.com/ConfettiFX/The-Forge)
-2. Chapman J.: [Per-Object Motion Blur](http://john-chapman-graphics.blogspot.com/2013/01/per-object-motion-blur.html)
-3. McGuire, M., Hennessy, P., Bukowski, M., & Osman, B. (2012). [A Reconstruction Filter for Plausible Motion Blur](https://casual-effects.com/research/McGuire2012Blur/index.html). Proceedings of the ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games 2012 (I3D’12). 
+- The Forge - [Github](https://github.com/ConfettiFX/The-Forge)
+- Chapman J.: [Per-Object Motion Blur](http://john-chapman-graphics.blogspot.com/2013/01/per-object-motion-blur.html)
+- McGuire, M., Hennessy, P., Bukowski, M., & Osman, B. (2012). [A Reconstruction Filter for Plausible Motion Blur](https://casual-effects.com/research/McGuire2012Blur/index.html). Proceedings of the ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games 2012 (I3D’12).
+- Sponza model authored by Frank Meinl at [Crytek](https://www.crytek.com).
+- Sponza model acquired from [McGuire Computer Graphics Archive](https://casual-effects.com/data).
+  
+  
