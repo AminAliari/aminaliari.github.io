@@ -9,6 +9,9 @@ draft: false
 tags: [Computer Graphics, Rendering, Motion Blur, Optimization, Velocity Buffer]
 ---
 
+[Source Code](https://github.com/AminAliari/motion-blur)
+
+---
 
 Recently, I was exploring different Motion Blur techniques being used in the industry. Now, I have decided to jot down the result of this research.
 
@@ -128,9 +131,9 @@ Alright, finally, it is time to show some numbers. I implemented this project us
 
 {{< figure src="/images/motionblur/result.png" title="" >}}
 
-# Disclaimer
-I would not be surprised if I made a bunch of errors here. 
-So, in that case, please enlighten me by using one of the contact methods provided. Thank you!
+#
+
+**Do you see mistakes, typos, or have questions? Pleaes let me know!**
 
 ####
 
