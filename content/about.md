@@ -8,7 +8,7 @@ showReadingTime: false
 
 <span style="text-align: justify;">
 {{% markdown %}}
-I have been active in the game industry for seven years and have four years of experience in the computer graphics field.
+I have been active in the game industry for seven years and have more than three years of experience in the computer graphics field.
 I am currently a researcher at [Ubisoft Montreal,](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
 and studying master's at [ÉTS.](https://etsmtl.ca/en)
 Previously, I was a graphics engineer at [The Forge.](https://theforge.dev)
