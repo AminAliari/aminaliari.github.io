@@ -9,7 +9,7 @@ draft: false
 tags: [Computer Graphics, Rendering, Motion Blur, Optimization, Velocity Buffer]
 ---
 
-# Download
+# Source Code
 First things first! You can get the code from the link below. Follow the instructions to download the Sponza art assets. 
 [Source Code](https://github.com/AminAliari/motion-blur)
 
