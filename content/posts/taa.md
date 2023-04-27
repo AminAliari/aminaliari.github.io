@@ -7,7 +7,7 @@ cover:
    caption: "[Bunny model by maxpanysh](https://sketchfab.com/3d-models/silent-ash-bc44272e8c1047148b33c913e659fcfa)"
 draft: false
 series: [Mithra]
-tags: [Computer Graphics, Rendering, TAA, God Rays, Blue Noise]
+tags: [Computer Graphics, TAA, God Rays, Blue Noise]
 ---
 
 

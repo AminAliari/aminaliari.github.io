@@ -6,7 +6,7 @@ cover:
    relative: false
    caption: "Photo: The Last of Us Part II by Naughty Dog ©2019 Sony Interactive Entertainment."
 draft: false
-tags: [Computer Graphics, Rendering, Motion Blur, Optimization, Velocity Buffer]
+tags: [Computer Graphics, Motion Blur, Optimization, Velocity Buffer]
 ---
 
 # Source Code

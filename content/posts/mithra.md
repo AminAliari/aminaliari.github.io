@@ -6,10 +6,10 @@ cover:
     relative: false
 draft: false
 series: [Mithra]
-tags: [Computer Graphics, Rendering, Physically-based Rendering, OpenGL, C++, Image-based Lighting]
+tags: [Computer Graphics, Physically-based Rendering, OpenGL, C++, Image-based Lighting]
 ---
 
-"Mithra" is a physically-based graphics renderer featuring many new and modern rendering techniques such as image-based lighting, shadow-mapping with tight projection, and more.
+**Mithra** is a physically-based graphics renderer featuring many new and modern rendering techniques such as image-based lighting, shadow-mapping with tight projection, and more.
 I have also proposed and defended this renderer as my B.Sc. project at Amirkabir University of Technology (Tehran Polytechnic).
 
 ####
