@@ -46,9 +46,9 @@ You know, we never start with shiny pixels...
 - Use Blue Noise in the random number generator.
 
 # References
+- [The Forge](https://github.com/ConfettiFX/The-Forge)
 - [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
 - [Coding Adventure: Ray Tracing](https://www.youtube.com/watch?v=Qz0KTGYJtUk&ab_channel=SebastianLague)
 - [Simulating the Colors of the Sky](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html)
 - [Casual Shadertoy Path Tracing 1: Basic Camera, Diffuse, Emissive](https://blog.demofox.org/2020/05/25casual-shadertoy-path-tracing-1-basic-camera-diffuse-emissive)
 - *A Framework for the Experimental Comparison of Solar and Skydive Illumination*, Joseph T. Kider Jr et al., Cornell University 2014.
-)
