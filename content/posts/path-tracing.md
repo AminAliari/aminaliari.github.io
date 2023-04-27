@@ -40,10 +40,12 @@ You know, we never start with shiny pixels...
 
 # Future Work
 - Using Monte Carlo.
-- Supporting different BRDF models.
-- Supporting triangle intersection.
+- Filmic Tonemapping.
 - Using acceleration structures.
+- Supporting triangle intersection.
+- Supporting different BRDF models.
 - Use Blue Noise in the random number generator.
+
 
 # References
 - [The Forge](https://github.com/ConfettiFX/The-Forge)
