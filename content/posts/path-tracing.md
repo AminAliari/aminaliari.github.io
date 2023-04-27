@@ -31,8 +31,8 @@ However, mine took a little more than a "weekend" because I decided to implement
 ---
 
 # Conclusion
-To wrap this up, let's look at an issue I encountered while implementing the path tracer. Yeah, it was the good old `NaN` attacking the poor pixels. 😔
-You know, we never start with shiny pixels...
+To wrap this up, let's look at an issue I encountered while implementing the path tracer. Yeah, it was the good old `NaN` attacking the poor pixels.😔
+You know, we never start with shiny pixels...Anyways, the culprit was normalizing some zero vectors. So, always be careful with that because division by zero is right around the corner!
 
 {{< figure align=center src="/images/path-tracing/oops.gif" title="" >}}
 
