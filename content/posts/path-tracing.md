@@ -18,7 +18,7 @@ Any graphics programmer would, at some point, take a look at the fantastic [Ray 
 However, mine took a little more than a "weekend" because I decided to implement it on GPU (DirectX 12, Vulkan) and also add features such as physically-based atmospheric scattering. Here are some figures:
 
 
-{{< figure align=center src="/images/path-tracing/show.gif" title="My Whitted Ray Tracer" >}}
+{{< figure align=center src="/images/path-tracing/show.gif" title="My Whitted Path Tracer" >}}
 
 ---
 
