@@ -4,7 +4,7 @@ date: 2022-10-01T10:00:00
 cover:
    image: "/images/fluid-sim/header.png"
    relative: false
-   caption: "[Source](http://david.li/fluid)"
+   caption: "[Source Image](http://david.li/fluid)"
 draft: false
 tags: [Computer Graphics, Fluid Simulation, Compute]
 ---
