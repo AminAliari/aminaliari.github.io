@@ -45,7 +45,7 @@ You know, we never start with shiny pixels...Anyways, the culprit was normalizin
 - Supporting triangle intersection.
 - Supporting different BRDF models.
 - Use Blue Noise in the random number generator.
-- Making it an actual path tracer! (now it is more of a raytracer.)
+- Making it an actual path tracer! (now it is more of a ray tracer.)
 
 
 # References
