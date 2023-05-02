@@ -22,7 +22,7 @@ At first glance, I found several per-pixel motion blur approaches, but they did 
 # Screen-space Motion Blur
 My main issue with the trivial approaches was that they would only take the camera motion into account. The problem with this approach is that the movement of the object would not make a discernible motion trail. Basically, in motion blur effects based on the camera's position and orientation, one rendering pass would be dedicated to finding the difference in pixels' position between the current frame and the previous one. The result of this render pass is stored in a render target, commonly called screen velocity vectors.
 
-# A better approach
+# A Better Approach
 As I was continuing my research, one method particularly caught my eye. It was called *A Reconstruction Filter for Plausible Motion Blur* by [Prof. McGuire](https://casual-effects.com/research/McGuire2012Blur/index.html). I knew that this method is considered a bit old by now, but I also knew that it had proved its quality as it was used in many titles of its time.
 
 Let's first see how this method works:
@@ -112,7 +112,7 @@ If you want to learn more about this method, you can read the paper below in the
 
 ####
 
-# An optimized implementation
+# An Optimized Implementation
 Alright, enough with the introductions; now, it is time to talk about what I was able to do!
 
 First of all, if this approach is considered to be a good one, then what is the problem? Well, even though today's GPUs are way more powerful than the ones when this paper was first published (2012), it could be a good idea to implement the method in a more optimized way.
@@ -127,6 +127,13 @@ So here is what I did to implement an optimized version of this method:
 #
 
 3. To further optimize this method, we have to pay heed to our memory access pattern. In the *Neighbor pass*, we want to find the most dominant velocity vector between the neighbors. We are essentially accessing 8 neighbors, but these tiles share some neighbors. As a result, should we store the result of our texture fetches in the group shared memory (also called LDS), we can avoid the extra costly samples in the subsequent calls.
+
+# Future Work
+There are more techniques to optimize the method further.
+For instance, instead of early exiting when velocity is lower than a threshold,
+we can have a pass where we classify the tiles and use IndirectDispatch for different complexities.
+Some tiles will be classified as early exit tiles, and some would be selected for further calculations.
+This way, we can save on our resources and regain some of the frame time.
 
 # Conclusion
 Alright, finally, it is time to show some numbers. I implemented this project using The Forge rendering framework and ran it on an NVIDIA GTX 970. The results were as follows:
