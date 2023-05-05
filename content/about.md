@@ -22,6 +22,6 @@ which was also presented at the [EUROGRAPHICS 2023](https://eg2023.saarland-info
 
 #
 
-**My resume is available upon request:** [maminaliari at gmail dot com](mailto:maminaliari@gmail.com)
+**My resume is available upon request:** [maminaliari [at] gmail [dot] com](mailto:maminaliari@gmail.com)
 {{% /markdown %}}
 </span>
