@@ -56,7 +56,7 @@
             en: {
                 consentModal: {
                     title: 'Cookies',
-                    description: 'Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use.',
+                    description: 'This site uses cookies. By continuing to use this website, you agree to their use.',
                     acceptAllBtn: 'Close and accept',
                     acceptNecessaryBtn: '',
                     footer: `
