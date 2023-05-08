@@ -60,7 +60,7 @@
                     acceptAllBtn: 'Close and accept',
                     acceptNecessaryBtn: '',
                     footer: `
-                        <a href="https://automattic.com/cookies/" target="_blank">Privacy Policy</a>
+                        <a href="https://automattic.com/cookies/" target="_blank">Cookies Policy</a>
                     `
                 },
                 preferencesModal: {
