@@ -1,5 +1,5 @@
 ---
-title: "Eurographics Publication"
+title: "Eurographics 2023 Publication"
 date: 2023-05-07T10:00:00
 cover:
    image: "/images/neural-face/header.png"
@@ -28,13 +28,13 @@ We will be more than happy to meet you!
 Please cite [this paper](https://diglib.eg.org/handle/10.1111/cgf14760) if you use this code in your own work. Please also let [us](mailto:eric.paquette@etsmtl.ca) know.
 ```
 @article {10.1111:cgf.14760,
-	journal = {Computer Graphics Forum},
-	title = {{Face Editing Using Part-Based Optimization of the Latent Space}},
-	author = {Aliari, Mohammad Amin and Beauchamp, Andre and Popa, Tiberiu and Paquette, Eric},
-	year = {2023},
-	publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
-	ISSN = {1467-8659},
-	DOI = {10.1111/cgf.14760}
+    journal = {Computer Graphics Forum},
+    title = {{Face Editing Using Part-Based Optimization of the Latent Space}},
+    author = {Aliari, Mohammad Amin and Beauchamp, Andre and Popa, Tiberiu and Paquette, Eric},
+    year = {2023},
+    publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
+    ISSN = {1467-8659},
+    DOI = {10.1111/cgf.14760}
 }
 ```
 
