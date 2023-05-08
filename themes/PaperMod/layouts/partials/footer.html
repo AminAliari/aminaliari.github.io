@@ -75,9 +75,11 @@
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
+            document.documentElement.classList.remove('cc--darkmode');
         } else {
             document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
+            document.documentElement.classList.add('cc--darkmode');
         }
     })
 

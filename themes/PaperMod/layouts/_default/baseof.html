@@ -18,6 +18,10 @@
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-</body>
 
+    {{ range .Site.Params.custom_js -}}
+        <script defer src="{{ . | absURL }}"></script>
+    {{- end }}
+
+</body>
 </html>

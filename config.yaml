@@ -61,6 +61,9 @@ params:
       Here, I mostly write about my hobby projects and topics related to computer graphics.
       **[More about me.](/about)**
 
+  custom_css: ["css/cookieconsent.css"]
+  custom_js:  ["js/cookieconsent.umd.js", "js/cookieconsent-init.js"]
+
   socialIcons:
     - name: "email"
       url:  "mailto:maminaliari@gmail.com"
