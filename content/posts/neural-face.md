@@ -21,9 +21,9 @@ We will be more than happy to meet you!
 # Abstract
 > We propose an approach for interactive 3D face editing based on deep generative models. Most of the current face modeling methods rely on linear methods and cannot express complex and non-linear deformations. In contrast to 3D morphable face models based on Principal Component Analysis (PCA), we introduce a novel architecture based on variational autoencoders. Our architecture has multiple encoders (one for each part of the face, such as the nose and mouth) which feed a single decoder. As a result, each sub-vector of the latent vector represents one part. We train our model with a novel loss function that further disentangles the space based on different parts of the face. The output of the network is a whole 3D face. Hence, unlike partbased PCA methods, our model learns to merge the parts intrinsically and does not require an additional merging process. To achieve interactive face modeling, we optimize for the latent variables given vertex positional constraints provided by a user. To avoid unwanted global changes elsewhere on the face, we only optimize the subset of the latent vector that corresponds to the part of the face being modified. Our editing optimization converges in less than a second. Our results show that the proposed approach supports a broader range of editing constraints and generates more realistic 3D faces.
 
-*Authors*: Mohammad Amin Aliari, Andre Beauchamp, Tiberiu Popa, Eric Paquette
+**Authors:** Mohammad Amin Aliari, Andre Beauchamp, Tiberiu Popa, Eric Paquette
 
-*Publisher:* Computer Graphics Forum (2023). The Eurographics Association and John Wiley & Sons Ltd., 2023
+**Publisher:** Computer Graphics Forum (2023). The Eurographics Association and John Wiley & Sons Ltd., 2023
 
 # Reference
 Please cite [this paper](https://diglib.eg.org/handle/10.1111/cgf14760) if you use this code in your own work. Please also let [us](mailto:eric.paquette@etsmtl.ca) know.
