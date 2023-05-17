@@ -45,7 +45,7 @@ You know, we never start with shiny pixels...Anyways, the culprit was normalizin
 - Using BVH as the acceleration structure
 - Supporting triangle intersection
 - Supporting different BxDF models
-- Use Blue Noise in the random number generator
+- Using Blue Noise for jittering rays (stratified sampling)
 
 
 # References
