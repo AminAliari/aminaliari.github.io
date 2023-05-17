@@ -39,13 +39,13 @@ You know, we never start with shiny pixels...Anyways, the culprit was normalizin
 ---
 
 # Future Work
-- Using Monte Carlo.
-- Filmic Tonemapping.
-- Using acceleration structures.
-- Supporting triangle intersection.
-- Supporting different BxDF models.
-- Use Blue Noise in the random number generator.
-- Making it an actual path tracer! (now it is more of a ray tracer.)
+- Filmic Tonemapping
+- BRDF Importance Sampling
+- Multiple Importance Sampling (MIS)
+- Using BVH as the acceleration structure
+- Supporting triangle intersection
+- Supporting different BxDF models
+- Use Blue Noise in the random number generator
 
 
 # References
