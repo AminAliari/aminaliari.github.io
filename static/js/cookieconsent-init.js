@@ -56,11 +56,11 @@
             en: {
                 consentModal: {
                     title: 'Cookies',
-                    description: 'Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use.',
+                    description: 'This site uses cookies. By continuing to use this website, you agree to their use.',
                     acceptAllBtn: 'Close and accept',
                     acceptNecessaryBtn: '',
                     footer: `
-                        <a href="https://automattic.com/cookies/" target="_blank">Privacy Policy</a>
+                        <a href="https://automattic.com/cookies/" target="_blank">Cookies Policy</a>
                     `
                 },
                 preferencesModal: {
