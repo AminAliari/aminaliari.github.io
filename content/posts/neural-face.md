@@ -52,4 +52,4 @@ They were very helpful and friendly and shared their expertise and insights with
 They also created an enjoyable research environment where I learned a lot and had fun.
 
 # Source Code
-Coming soon!
+You can visit the official Ubisoft's [GitHub repository.](https://github.com/ubisoft/ubisoft-laforge-face-editing-face-editing-using-part-based-optimization-of-the-latent-space)
