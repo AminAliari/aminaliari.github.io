@@ -17,7 +17,7 @@ and worked on [Children of Morta](https://childrenofmorta.com) and [Tale of Roni
 
 
 I have recently published my master's thesis, _Face Editing Using Part-Based Optimization of the Latent Space_,
-in the [Computer Graphics Forum journal,](https://diglib.eg.org/handle/10.1111/cgf14760)
+in the [Computer Graphics Forum journal,](http://dx.doi.org/10.1111/cgf.14760)
 which was also presented at the [Eurographics 2023](https://eg2023.saarland-informatics-campus.de/full-program) conference.
 
 #

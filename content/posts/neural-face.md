@@ -9,13 +9,13 @@ draft: false
 tags: [Computer Graphics, Eurographics, Deep Neural Networks]
 ---
 <div align='center'>
-    <a href='https://diglib.eg.org/handle/10.1111/cgf14760' target='_blank'><img loading="lazy" src="https://img.shields.io/badge/Paper-nueral--face-blue" alt="Paper" /></a>
+    <a href='http://dx.doi.org/10.1111/cgf.14760' target='_blank'><img loading="lazy" src="https://img.shields.io/badge/Paper-nueral--face-blue" alt="Paper" /></a>
 </div>
 
 My latest work _**Face Editing Using Part‑Based Optimization of the Latent Space**_ has just been released! We submitted this paper to **Eurographics 2023**, and it has been published in **Computer Graphics Forum** journal **(Volume 42, Issue 2)**. In fact, this is my first publication ever.
 Therefore, and naturally, writing for the first time was very challenging for me, especially since I was a master's student.
 However, I should mention that this work was done with some amazing collaborators that made my job much easier. Namely, my supervisors: **Prof. Eric Paquette** and **Prof. Tiberiu Popa**, and the incredible people from **Ubisoft La Forge**.
-Please go ahead and check out [the article.](https://diglib.eg.org/handle/10.1111/cgf14760) Also, if you happen to be in **Saarbrücken, Germany**, around **May 8 – 12, 2023**, you can attend [our presentation](https://eg2023.saarland-informatics-campus.de/full-program/#fp3-10-1).
+Please go ahead and check out [the article.](http://dx.doi.org/10.1111/cgf.14760) Also, if you happen to be in **Saarbrücken, Germany**, around **May 8 – 12, 2023**, you can attend [our presentation](https://eg2023.saarland-informatics-campus.de/full-program/#fp3-10-1).
 We will be more than happy to meet you!
 
 # Abstract
@@ -26,7 +26,7 @@ We will be more than happy to meet you!
 **Publisher:** Computer Graphics Forum (2023). The Eurographics Association and John Wiley & Sons Ltd., 2023
 
 # Reference
-Please cite [this paper](https://diglib.eg.org/handle/10.1111/cgf14760) if you use this code in your own work. Please also let [us](mailto:eric.paquette@etsmtl.ca) know.
+Please cite [this paper](http://dx.doi.org/10.1111/cgf.14760) if you use this code in your own work. Please also let [us](mailto:eric.paquette@etsmtl.ca) know.
 ```
 @article {10.1111:cgf.14760,
  journal = {Computer Graphics Forum},
