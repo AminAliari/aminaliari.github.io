@@ -28,15 +28,20 @@ We will be more than happy to meet you!
 # Reference
 Please cite [this paper](http://dx.doi.org/10.1111/cgf.14760) if you use this code in your own work. Please also let [us](mailto:eric.paquette@etsmtl.ca) know.
 ```
-@article {10.1111:cgf.14760,
- journal = {Computer Graphics Forum},
- title = {{Face Editing Using Part-Based Optimization of the Latent Space}},
- author = {Aliari, Mohammad Amin and Beauchamp, Andre and Popa, Tiberiu and Paquette, Eric},
- year = {2023},
- publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
- ISSN = {1467-8659},
- DOI = {10.1111/cgf.14760}
+@article{https://doi.org/10.1111/cgf.14760,
+author = {Aliari, Mohammad Amin and Beauchamp, Andre and Popa, Tiberiu and Paquette, Eric},
+title = {Face Editing Using Part-Based Optimization of the Latent Space},
+journal = {Computer Graphics Forum},
+volume = {42},
+number = {2},
+pages = {269-279},
+keywords = {CCS Concepts, • Computing methodologies → Mesh models, Neural networks},
+doi = {https://doi.org/10.1111/cgf.14760},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14760},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.14760},
+year = {2023}
 }
+
 ```
 
 # Acknowledement
