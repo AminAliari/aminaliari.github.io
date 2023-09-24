@@ -8,10 +8,11 @@ showReadingTime: false
 
 <span style="text-align: justify;">
 {{% markdown %}}
-I have been active in the game industry for seven years and have more than three years of experience in the field of computer graphics.
-I am currently a researcher at [Ubisoft Montreal,](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
-and studying master's at [ÉTS.](https://etsmtl.ca/en)
-Previously, I was a graphics engineer at [The Forge.](https://theforge.dev)
+I have been active in the game industry for several years and my focus is in the field of computer graphics.
+I am currently a 3D Programmer [Ubisoft Toronto](https://toronto.ubisoft.com).
+I was previously a researcher at [Ubisoft Montreal](https://montreal.ubisoft.com/en/our-commitments/research-and-development)
+while doing my master's at [ÉTS.](https://etsmtl.ca/en)
+Before that, I was a graphics engineer at [The Forge.](https://theforge.dev)
 Prior to that, I was a developer at [Dead Mage,](https://deadmage.com)
 and worked on [Children of Morta](https://childrenofmorta.com) and [Tale of Ronin.](https://taleofronin.com) 
 
